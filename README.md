@@ -258,13 +258,18 @@ vercel
 
 **Frontend (.env):**
 ```
-VITE_API_URL=https://your-backend-url.com
+VITE_API_URL=http://localhost:5000
 ```
+For production, set this to your backend deployment URL (no trailing slash).
 
 **Backend (.env):**
 ```
+ALLOWED_ORIGINS=http://localhost:3000
 PORT=5000
 ```
+For production, set `ALLOWED_ORIGINS` to your frontend deployment URL(s), comma-separated.
+
+See `DEPLOYMENT.md` for detailed deployment instructions.
 
 ## 📝 Notes / Assumptions
 
