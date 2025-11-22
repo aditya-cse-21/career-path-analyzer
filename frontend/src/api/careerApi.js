@@ -1,11 +1,6 @@
 import axios from 'axios';
 
-const getApiBaseUrl = () => {
-  const url = import.meta.env.VITE_API_URL || 'http://localhost:5000';
-  return url.replace(/\/+$/, '');
-};
-
-const API_BASE_URL = getApiBaseUrl();
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
 
 export const analyzeSkillGap = async (data) => {
   try {
