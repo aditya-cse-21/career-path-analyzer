@@ -1,0 +1,101 @@
+.career-roadmap {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.career-roadmap h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+  border-bottom: 2px solid #764ba2;
+  padding-bottom: 0.5rem;
+}
+
+.phases-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.phase-card {
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  background-color: #fafafa;
+  transition: box-shadow 0.3s;
+}
+
+.phase-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.phase-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.phase-number {
+  font-weight: 700;
+  color: #764ba2;
+  font-size: 1.1rem;
+}
+
+.phase-duration {
+  color: #666;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.phase-title {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.phase-description {
+  color: #666;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.phase-topics h4 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+
+.phase-topics ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.phase-topics li {
+  padding: 0.4rem 0.75rem;
+  margin-bottom: 0.4rem;
+  background-color: white;
+  border-left: 3px solid #764ba2;
+  border-radius: 4px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .career-roadmap {
+    padding: 1.5rem;
+  }
+
+  .career-roadmap h2 {
+    font-size: 1.5rem;
+  }
+
+  .phase-card {
+    padding: 1rem;
+  }
+}
+
